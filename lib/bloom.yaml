@@ -5,8 +5,8 @@ analyzer:
     dead_code: error
 
   exclude:
-    - "*.g.dart" # Generated files
-    - "*.freezed.dart" # Freezed files
+    - "**.g.dart" # Generated files
+    - "**.freezed.dart" # Freezed files
 
   plugins:
     - dart_code_metrics
