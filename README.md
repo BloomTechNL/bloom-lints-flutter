@@ -15,7 +15,7 @@ This package is built on top of Flutter's recommended set of lints from
 dev_dependencies:
    bloom_lints:
        git:
-         url: git@github.com:BloomTechNL/bloom-lints-flutter.git
+         url: https://github.com/BloomTechNL/bloom-lints-flutter
          ref: main
 ```
 
