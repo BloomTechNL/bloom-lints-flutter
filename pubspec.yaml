@@ -1,0 +1,10 @@
+name: bloom_lints
+description: The Bloom Technologies linter for Flutter
+version: 1.0.0
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter_lints: 2.0.1
+  dart_code_metrics: 5.7.4

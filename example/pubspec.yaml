@@ -1,0 +1,9 @@
+name: example
+description: Example project for the Bloom Technologies linter for Flutter
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dev_dependencies:
+  bloom_lints:
+    path: ../
