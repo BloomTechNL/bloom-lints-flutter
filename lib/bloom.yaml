@@ -18,6 +18,7 @@ linter:
     - library_prefixes
     - constant_identifier_names # prefer
     - directives_ordering
+    - require_trailing_commas
 
     # DOCUMENTATION
     - slash_for_doc_comments
