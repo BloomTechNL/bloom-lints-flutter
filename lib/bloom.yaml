@@ -8,9 +8,6 @@ analyzer:
     - "**.g.dart" # Generated files
     - "**.freezed.dart" # Freezed files
 
-  plugins:
-    - dart_code_metrics
-
 linter:
   rules:
     # STYLE
@@ -62,9 +59,8 @@ linter:
     - avoid_private_typedef_functions # prefer
     - avoid_equals_and_hash_code_on_mutable_classes # avoid
     - avoid_null_checks_in_equality_operators
-
-dart_code_metrics:
-  rules:
-    - avoid-non-null-assertion
-    - avoid-returning-widgets
-    - avoid-expanded-as-spacer
+# dart_code_metrics:
+#   rules:
+#     - avoid-non-null-assertion
+#     - avoid-returning-widgets
+#     - avoid-expanded-as-spacer
