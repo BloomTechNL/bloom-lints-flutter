@@ -1,3 +1,4 @@
+import 'package:analyzer/dart/ast/ast.dart';
 import 'package:analyzer/dart/ast/token.dart';
 import 'package:analyzer/error/error.dart';
 import 'package:analyzer/error/listener.dart';
@@ -18,8 +19,20 @@ class AvoidNonNullAssertion extends DartLintRule {
   void run(CustomLintResolver resolver, ErrorReporter reporter, CustomLintContext context) {
     {
       context.registry.addVariableDeclaration((node) {
-        if (node.endToken == TokenType.BANG) {
-          reporter.reportErrorForNode(code, node);
+        node.childEntities.forEach((element) {
+          if (element is AstNode) {
+            if (element.endToken.type == TokenType.BANG) {
+              return reporter.reportErrorForNode(code, element);
+            }
+          }
+        });
+      });
+
+      context.registry.addArgumentList((node) {
+        for (final argument in node.arguments) {
+          if (argument.endToken.type == TokenType.BANG) {
+            return reporter.reportErrorForNode(code, argument);
+          }
         }
       });
     }
