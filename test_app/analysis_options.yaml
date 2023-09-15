@@ -1,0 +1,6 @@
+include: package:flutter_lints/flutter.yaml
+
+# Add this for the custom lint to work
+analyzer:
+  plugins:
+    - custom_lint
