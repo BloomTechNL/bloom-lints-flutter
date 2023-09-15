@@ -13,22 +13,22 @@ linter:
     # STYLE
     - library_names
     - library_prefixes
-    - constant_identifier_names # prefer
+    - constant_identifier_names
     - directives_ordering
     - require_trailing_commas
 
     # DOCUMENTATION
     - slash_for_doc_comments
-    - package_api_docs # prefer
+    - package_api_docs
 
     # USAGE
     - implementation_imports
     - prefer_relative_imports
     - prefer_adjacent_string_concatenation
-    - prefer_interpolation_to_compose_strings # prefer
-    - unnecessary_brace_in_string_interps # avoid
+    - prefer_interpolation_to_compose_strings
+    - unnecessary_brace_in_string_interps
     - prefer_collection_literals
-    - avoid_function_literals_in_foreach_calls # avoid
+    - avoid_function_literals_in_foreach_calls
     - prefer_function_declarations_over_variables
     - unnecessary_lambdas
     - prefer_equal_for_default_values
@@ -46,16 +46,18 @@ linter:
 
     # DESIGN
     - prefer_single_quotes
-    - use_to_and_as_if_applicable # prefer
-    - one_member_abstracts # avoid
+    - use_to_and_as_if_applicable
+    - one_member_abstracts
     - prefer_mixin
-    - prefer_final_fields # prefer
+    - prefer_final_fields
     - use_setters_to_change_properties
     - avoid_setters_without_getters
-    - avoid_returning_null # avoid
-    - avoid_returning_this # avoid
-    - type_annotate_public_apis # prefer
+    - avoid_returning_null
+    - avoid_returning_this
+    - type_annotate_public_apis
     - avoid_return_types_on_setters
-    - avoid_private_typedef_functions # prefer
-    - avoid_equals_and_hash_code_on_mutable_classes # avoid
+    - avoid_private_typedef_functions
+    - avoid_equals_and_hash_code_on_mutable_classes
     - avoid_null_checks_in_equality_operators
+    - avoid_multiple_declarations_per_line
+    - avoid_redundant_argument_values
