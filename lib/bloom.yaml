@@ -46,6 +46,7 @@ linter:
     - avoid_catching_errors
     - use_rethrow_when_possible
     - prefer_final_locals
+    - avoid_void_async
   
     # DESIGN
     - prefer_single_quotes
