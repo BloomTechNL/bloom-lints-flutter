@@ -1,0 +1,11 @@
+include: ./package_rules.yaml
+
+analyzer:
+  errors:
+    package_api_docs: ignore
+    public_member_api_docs: ignore
+
+linter:
+  rules:
+    package_api_docs: false
+    public_member_api_docs: false
