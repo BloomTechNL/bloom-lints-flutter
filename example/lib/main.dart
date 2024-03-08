@@ -1,25 +1,35 @@
 import 'package:example/foo.dart'; // prefer_relative_imports
 
 void main() {
+  // ignore: unused_local_variable, omit_local_variable_types
   const String hello = 'Hello';
-  final String world = 'World'; // prefer_const_declarations
+  // ignore: unused_local_variable, omit_local_variable_types, prefer_const_declarations
+  final String world = 'World';
+  // ignore: unused_local_variable
   final Foo foo;
 
+  // ignore: prefer_const_declarations, unnecessary_nullable_for_final_variable_declarations
   final String? bar = 'bar';
-  final barString = bar!; // avoid-non-null-assertion
+  // ignore: unused_local_variable
+  final barString = bar!;
 
-  print('Avoid this print'); // avoid_print
+  // ignore: avoid_print
+  print('Avoid this print');
 }
 
+// ignore: public_member_api_docs
 abstract class Base {
+  // ignore: public_member_api_docs
   int methodA(int foo);
+  // ignore: public_member_api_docs
   String methodB(String foo);
 }
 
+// ignore: public_member_api_docs
 class Sub extends Base {
   @override
   int methodA(int foo) => foo;
 
   @override
-  String methodB(String bar) => bar; // avoid_renaming_method_parameters
+  String methodB(String foo) => foo;
 }

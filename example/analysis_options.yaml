@@ -1,1 +1,1 @@
-include: package:bloom_lints/bloom.yaml
+include: package:bloom_lints/package_rules.yaml
