@@ -161,6 +161,7 @@ analyzer:
     unnecessary_const: warning
     unnecessary_constructor_name: warning
     unnecessary_getters_setters: warning
+    unnecessary_import: warning
     unnecessary_lambdas: warning
     unnecessary_late: warning
     unnecessary_library_directive: warning
